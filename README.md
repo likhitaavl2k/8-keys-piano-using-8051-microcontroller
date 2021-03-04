@@ -24,6 +24,10 @@ Both systems repeat at the octave. The difference between sargam and solfege is 
 <b>Output for key2:</b>
 <img src="Screenshots/Picture2.jpg">
 
+<b>Other output screenshots: </b>https://github.com/likhitaavl2k/8-keys-piano-using-8051-microcontroller/blob/main/MPMC%20Documentation(MiniProject).pdf
+
+<b>PPT: </b> https://github.com/likhitaavl2k/8-keys-piano-using-8051-microcontroller/blob/main/Mini%20Project%20PPT.pptx
+
 <b>Software Requirements:</b><br>
 1. Keil MicroVision 3 (Generation of hex code)
 2. Proteus 8 Professional (Schematic Capture) for simulation.
