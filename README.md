@@ -1,5 +1,6 @@
 # 8 keys piano using 8051 microcontroller
  
+<pre>
 <b>Introduction:</b><br>
 The piano is a musical instrument played mainly by means of a keyboard. It is one of the most popular instruments in the world.
 The rhythmic organization is based on rhythmic patterns called Taal. The melodic foundations are called ragas. One possible classification of ragas is into “melodic modes” or “parent scales”, known as Thaats, under which most ragas can be classified based on the notes they use.
@@ -14,6 +15,7 @@ Ni (Nishad) = Ti
 Sa (Shadaj) = Do 
 Both systems repeat at the octave. The difference between sargam and solfege is that re, ga, ma, dha, and ni can refer to either “Natural” (Shuddha) or altered “Flat” (Komal) or “Sharp” (Tivra) versions of their respective scale degrees. As with movable do solfege, the notes are heard relative to an arbitrary tonic that varies from performance to performance, rather than to fixed frequencies, as on a xylophone. 
 <b>In this project we are generating the same friquencies whch are excately same as sa re ga ma pa dha ni sa by using the controller.</b>
+</pre>
 
 <b>Components used:</b><br>
 <img src="Screenshots/Picture3.jpg">
