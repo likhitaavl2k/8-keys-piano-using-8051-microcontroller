@@ -13,7 +13,7 @@ Dha (Dhaivat) = La
 Ni (Nishad) = Ti 
 Sa (Shadaj) = Do </pre>
 Both systems repeat at the octave. The difference between sargam and solfege is that re, ga, ma, dha, and ni can refer to either “Natural” (Shuddha) or altered “Flat” (Komal) or “Sharp” (Tivra) versions of their respective scale degrees. As with movable do solfege, the notes are heard relative to an arbitrary tonic that varies from performance to performance, rather than to fixed frequencies, as on a xylophone. 
-<b>In this project we are generating the same friquencies whch are excately same as sa re ga ma pa dha ni sa by using the controller.</b>
+<b>In this project we are generating the same frequencies which are exactly same as sa re ga ma pa dha ni sa by using the controller.</b>
 
 <b>Components used:</b><br>
 <img src="Screenshots/Picture3.jpg">
