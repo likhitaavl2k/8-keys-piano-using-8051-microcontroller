@@ -1,0 +1,157 @@
+C51 COMPILER V8.12   PIANO                                                                 04/19/2020 13:29:53 PAGE 1   
+
+
+C51 COMPILER V8.12, COMPILATION OF MODULE PIANO
+OBJECT MODULE PLACED IN piano.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE piano.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h> 
+   2          sbit bu=P2^0; 
+   3          void delay1on() 
+   4          { 
+   5   1      TMOD=0X01; 
+   6   1      TH0=0Xf8; 
+   7   1      TL0=0X80; 
+   8   1      TR0=1; 
+   9   1      while(TF0==0); 
+  10   1      TR0=0; 
+  11   1      TF0=0; 
+  12   1      } 
+  13          void delay2on() 
+  14          { 
+  15   1      TMOD=0X01; 
+  16   1      TH0=0Xf9; 
+  17   1      TL0=0X55; 
+  18   1      TR0=1; 
+  19   1      while(TF0==0); 
+  20   1      TR0=0; 
+  21   1      TF0=0; 
+  22   1      } 
+  23          void delay3on() 
+  24          { 
+  25   1      TMOD=0X01; 
+  26   1      TH0=0Xfa; 
+  27   1      TL0=0X00; 
+  28   1      TR0=1; 
+  29   1      while(TF0==0); 
+  30   1      TR0=0; 
+  31   1      TF0=0; 
+  32   1      } 
+  33          void delay4on() 
+  34          { 
+  35   1      TMOD=0X01; 
+  36   1      TH0=0Xfa; 
+  37   1      TL0=0Xab; 
+  38   1      TR0=1; 
+  39   1      while(TF0==0); 
+  40   1      TR0=0; 
+  41   1      TF0=0; 
+  42   1      } 
+  43          void delay5on() 
+  44          { 
+  45   1      TMOD=0X01; 
+  46   1      TH0=0XFB; 
+  47   1      TL0=0X00; 
+  48   1      TR0=1; 
+  49   1      while(TF0==0); 
+  50   1      TR0=0; 
+  51   1      TF0=0; 
+  52   1      } 
+  53          void delay6on() 
+  54          { 
+  55   1      TMOD=0X01; 
+C51 COMPILER V8.12   PIANO                                                                 04/19/2020 13:29:53 PAGE 2   
+
+  56   1      TH0=0XFB; 
+  57   1      TL0=0X80; 
+  58   1      TR0=1; 
+  59   1      while(TF0==0); 
+  60   1      TR0=0; 
+  61   1      TF0=0; 
+  62   1      } 
+  63          void delay7on() 
+  64          { 
+  65   1      TMOD=0X01; 
+  66   1      TH0=0XFC; 
+  67   1      TL0=0X00; 
+  68   1      TR0=1; 
+  69   1      while(TF0==0); 
+  70   1      TR0=0; 
+  71   1      TF0=0; 
+  72   1      } 
+  73          void delay8on() 
+  74          { 
+  75   1      TMOD=0X01; 
+  76   1      TH0=0XFC; 
+  77   1      TL0=0X40; 
+  78   1      TR0=1; 
+  79   1      while(TF0==0); 
+  80   1      TR0=0; 
+  81   1      TF0=0; 
+  82   1      } 
+  83           
+  84          void main() 
+  85          { 
+  86   1      P2=0X00; 
+  87   1      while(1) 
+  88   1      { 
+  89   2      if(P1==0xFE) 
+  90   2      { 
+  91   3      bu=~bu; 
+  92   3      delay1on(); 
+  93   3      } 
+  94   2      else if(P1==0xFD) 
+  95   2      { 
+  96   3      bu=~bu; 
+  97   3      delay2on(); 
+  98   3      } 
+  99   2      else if(P1==0XFB) 
+ 100   2      { 
+ 101   3      bu=~bu; 
+ 102   3      delay3on(); 
+ 103   3      } 
+ 104   2      else if(P1==0XF7) 
+ 105   2      { 
+ 106   3      bu=~bu; 
+ 107   3      delay4on(); 
+ 108   3      } 
+ 109   2      else if(P1==0XEF) 
+ 110   2      { 
+ 111   3      bu=~bu; 
+ 112   3      delay5on(); 
+ 113   3      } 
+ 114   2      else if(P1==0XDF) 
+ 115   2      { 
+ 116   3      bu=~bu; 
+ 117   3      delay6on(); 
+C51 COMPILER V8.12   PIANO                                                                 04/19/2020 13:29:53 PAGE 3   
+
+ 118   3      } 
+ 119   2      else if(P1==0XBF) 
+ 120   2      { 
+ 121   3      bu=~bu; 
+ 122   3      delay7on(); 
+ 123   3      } 
+ 124   2      else if(P1==0X7F) 
+ 125   2      { 
+ 126   3      bu=~bu; 
+ 127   3      delay8on(); 
+ 128   3      } 
+ 129   2      } 
+ 130   1      } 
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    252    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
